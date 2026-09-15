@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>T$ — T-Money Records</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Animated Background -->
+<div id="records-background"></div>
+<div id="money-background"></div>
+
+<!-- Navigation -->
+<header class="navbar">
+
+<div class="logo">
+<span>T$</span>
+<div>
+<strong>T-MONEY</strong>
+<small>RECORDS</small>
+</div>
+</div>
+
+<nav>
+<a href="#home">HOME</a>
+<a href="#shop">SHOP</a>
+<a href="#records">RECORDS</a>
+<a href="#about">ABOUT</a>
+</nav>
+
+<button class="cart-button" onclick="openCart()">
+🛒 <span id="cart-count">0</span>
+</button>
+
+</header>
+
+
+<!-- Hero -->
+<main id="home">
+
+<section class="hero">
+
+<div class="hero-content">
+
+<p class="eyebrow">EST. T-MONEY ERA</p>
+
+<h1>
+<span>T$</span>
+T-MONEY
+<br>
+<strong>RECORDS</strong>
+</h1>
+
+<p class="hero-text">
+MUSIC. MONEY. CULTURE.
+<br>
+<span>MAKE NOISE. GET PAID.</span>
+</p>
+
+<div class="hero-buttons">
+<a href="#shop" class="btn primary">SHOP TMR</a>
+<a href="#records" class="btn secondary">SPIN THE RECORDS</a>
+</div>
+
+</div>
+
+<!-- Hero Record -->
+<div class="hero-record">
+
+<div class="vinyl">
+<div class="vinyl-label">
+<span>T$</span>
+<small>T-MONEY</small>
+</div>
+<div class="vinyl-hole"></div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Marquee -->
+<div class="marquee">
+<div class="marquee-track">
+T$ • T-MONEY RECORDS • TMR • MUSIC • MONEY • CULTURE • T$ • T-MONEY RECORDS • TMR • MUSIC • MONEY • CULTURE •
+</div>
+</div>
+
+
+<!-- Shop -->
+<section id="shop" class="shop-section">
+
+<div class="section-heading">
+<p>THE TMR COLLECTION</p>
+<h2>WEAR THE <span>MONEY</span></h2>
+</div>
+
+<div class="products">
+
+<!-- Hat -->
+<article class="product-card">
+
+<div class="product-image hat-image">
+<div class="hat">
+<div class="hat-logo">TMR</div>
+</div>
+</div>
+
+<div class="product-info">
+<p class="category">HEADWEAR</p>
+<h3>TMR Signature Hat</h3>
+
+<div class="product-bottom">
+<span>$35.00</span>
+
+<button onclick="addToCart('TMR Signature Hat', 35)">
+ADD +
+</button>
+</div>
+</div>
+
+</article>
+
+
+<!-- Shirt -->
+<article class="product-card">
+
+<div class="product-image shirt-image">
+<div class="shirt">
+<div class="shirt-logo">
+<span>T$</span>
+<small>T-MONEY RECORDS</small>
+</div>
+</div>
+</div>
+
+<div class="product-info">
+<p class="category">APPAREL</p>
+<h3>TMR Money Tee</h3>
+
+<div class="product-bottom">
+<span>$40.00</span>
+
+<button onclick="addToCart('TMR Money Tee', 40)">
+ADD +
+</button>
+</div>
+</div>
+
+</article>
+
+
+<!-- Record -->
+<article class="product-card">
+
+<div class="product-image record-image">
+
+<div class="mini-record">
+<div class="mini-label">
+T$
+</div>
+</div>
+
+</div>
+
+<div class="product-info">
+<p class="category">VINYL</p>
+<h3>TMR Limited Record</h3>
+
+<div class="product-bottom">
+<span>$50.00</span>
+
+<button onclick="addToCart('TMR Limited Record', 50)">
+ADD +
+</button>
+</div>
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- Records -->
+<section id="records" class="records-section">
+
+<div class="records-content">
+
+<p class="eyebrow">PRESS PLAY</p>
+
+<h2>
+THE SOUND
+<br>
+OF <span>T-MONEY</span>
+</h2>
+
+<p>
+Independent sound. Heavy bass. Real culture.
+TMR isn't just a label — it's a movement.
+</p>
+
+<button class="play-button" onclick="toggleMusic()">
+▶ PLAY TMR
+</button>
+
+<p id="music-status">TMR RADIO: OFFLINE</p>
+
+</div>
+
+<div class="record-display">
+<div class="big-record">
+<div class="big-label">T$</div>
+</div>
+</div>
+
+</section>
+
+
+<!-- About -->
+<section id="about" class="about-section">
+
+<div class="about-logo">
+T$
+</div>
+
+<div>
+<p class="eyebrow">WHO WE ARE</p>
+
+<h2>
+BUILT FOR THE
+<span>HUNGRY.</span>
+</h2>
+
+<p>
+T-Money Records represents music, fashion, ambition and
+independence. From the records we spin to the clothes we wear,
+everything carries the TMR stamp.
+</p>
+
+<div class="stats">
+
+<div>
+<strong>01</strong>
+<span>RECORD LABEL</span>
+</div>
+
+<div>
+<strong>02</strong>
+<span>STREETWEAR</span>
+</div>
+
+<div>
+<strong>03</strong>
+<span>THE MOVEMENT</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+
+<div class="footer-logo">
+T$ <span>T-MONEY RECORDS</span>
+</div>
+
+<p>© 2026 T-MONEY RECORDS. ALL RIGHTS RESERVED.</p>
+
+<div class="socials">
+<a href="#">IG</a>
+<a href="#">TT</a>
+<a href="#">YT</a>
+</div>
+
+</footer>
+
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="modal">
+
+<div class="cart-box">
+
+<button class="close-cart" onclick="closeCart()">×</button>
+
+<h2>YOUR TMR BAG</h2>
+
+<div id="cart-items"></div>
+
+<div class="cart-total">
+TOTAL:
+<strong>$<span id="cart-total">0.00</span></strong>
+</div>
+
+<button class="checkout" onclick="checkout()">
+CHECKOUT →
+</button>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
